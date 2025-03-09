@@ -94,6 +94,9 @@ app.delete('/usuaris/:id', (req, res) => {
   }
 });
 
+// Afegim _ a la variable per indicar que no s'utilitza, 
+// no la podem eliminar, Express requereix que els middleware mantinguin la seva signatura completa 
+// (req, res, next) també funciona correctament, però no es fan servir tots els paràmetres.
 app.use((_req, res, _next) => {
   res.status(404).send('Ruta no trobada!');
 });
