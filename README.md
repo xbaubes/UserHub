@@ -3,6 +3,20 @@ Basic CRUD application developed with Node + Express, designed to create, read, 
 
 ---
 
+This project includes Docker support for simplified setup and deployment.  
+You can build and run the API in a container without installing Node.js locally using this Docker command:
+```bash
+docker-compose up --build
+```
+Alternative you can use npm scripts:
+```bash
+npm run up
+```
+The API will be available at:
+http://localhost:3000
+
+---
+
 Use the Swagger UI to explore, test, and interact with the API directly:
 - Go to [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
 - Browse through the available endpoints
