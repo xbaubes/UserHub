@@ -2,12 +2,6 @@ import express from 'express'; // Importar Express
 import swaggerUi from 'swagger-ui-express';
 import swaggerJSDoc from 'swagger-jsdoc';
 
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 const app = express(); // Crear una instància de l'aplicació Express
 const PORT = 3000; // Definir el port del servidor
 
@@ -44,7 +38,7 @@ const swaggerOptions = {
       },
     ],
   },
-  apis: [path.join(__dirname, 'index.js')], // ubicació de les rutes (usa * quan estiguin separades en varis fitxers)
+  apis: ['./index.js'], // ubicació de les rutes (usa * quan estiguin separades en varis fitxers)
 };
 
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
