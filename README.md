@@ -6,7 +6,7 @@ Basic CRUD application developed with Node + Express, designed to create, read, 
 This project includes Docker support for simplified setup and deployment.  
 You can build and run the API in a container without installing Node.js locally using this Docker command:
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 Alternative you can use npm scripts:
 ```bash
