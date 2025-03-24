@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "up": "docker-compose up --build",
-    "down": "docker-compose down"
+    "up": "docker compose up --build",
+    "down": "docker compose down"
   },
   "keywords": [],
   "author": "",
