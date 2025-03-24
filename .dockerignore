@@ -1,0 +1,14 @@
+# Node modules (s installen dins el contenidor)
+node_modules
+
+# Fitxers de control de versions
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentacio
+README.md

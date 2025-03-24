@@ -1,0 +1,7 @@
+services:
+  userhub-api:
+    build: .
+    container_name: userhub-api
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
