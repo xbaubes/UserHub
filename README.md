@@ -8,7 +8,7 @@ You can build and run the API in a container without installing Node.js locally 
 ```bash
 docker compose up --build
 ```
-Alternative you can use npm scripts:
+Alternative you can use customized npm scripts:
 ```bash
 npm run up
 ```
