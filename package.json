@@ -14,7 +14,7 @@
   "description": "",
   "dependencies": {
     "express": "^4.20.0",
-    "swagger-jsdoc": "^6.2.8",
+    "js-yaml": "^4.1.0",
     "swagger-ui-express": "^5.0.1"
   }
 }
