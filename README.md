@@ -27,4 +27,4 @@ This interface is especially useful for developers and testers to understand how
 
 Additionally, it can serve as a lightweight backoffice tool to manually manage API operations during maintenance.
 
-Last version using swagger-jsdoc: as of [commit f0ee8c9](https://github.com/xbaubes/UserHub/blob/f0ee8c91becdbbfc4a328f325923de9c57e885f6/index.js). Now Swagger documentation is generated from an external `swagger.yaml` file instead of inline comments using `swagger-jsdoc`.
+Last version using swagger-jsdoc: [commit f0ee8c9](https://github.com/xbaubes/UserHub/blob/f0ee8c91becdbbfc4a328f325923de9c57e885f6/index.js). Now Swagger documentation is generated from an external `swagger.yaml` file instead of inline comments using `swagger-jsdoc`.
