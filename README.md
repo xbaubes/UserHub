@@ -17,7 +17,7 @@ http://localhost:3000
 
 ---
 
-Use the `Swagger UI` to explore, test, and interact with the API directly:
+Use `Swagger UI` to explore, test and interact with the API directly:
 - Go to [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
 - Browse through the available endpoints
 - Click on any endpoint to see its details
