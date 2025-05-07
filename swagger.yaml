@@ -39,11 +39,11 @@ paths:
     get:
       summary: Obté una llista d'usuaris
       description: |
-        GET /usuaris - Retorna tots els usuaris o els filtra per nom i edat amb paràmetres de query.
+        GET /usuaris - Retorna tots els usuaris o els filtra per nom i alçada amb paràmetres de query.
 
         Exemple URLs:
         [/usuaris](http://localhost:3000/usuaris)
-        [/usuaris?nom=Maria&edat=25](http://localhost:3000/usuaris?nom=Maria&edat=25)
+        [/usuaris?nom=Maria&alcada=160](http://localhost:3000/usuaris?nom=Maria&alcada=160)
       parameters:
         - in: query
           name: nom
@@ -51,10 +51,10 @@ paths:
             type: string
           description: Filtra per nom de l'usuari
         - in: query
-          name: edat
+          name: alcada
           schema:
             type: integer
-          description: Filtra per edat de l'usuari
+          description: Filtra per alçada de l'usuari
       responses:
         '200':
           description: Llista d'usuaris trobats
@@ -69,12 +69,12 @@ paths:
     post:
       summary: Crea un nou usuari
       description: |
-        POST /usuaris - Afegeix un nou usuari amb nom i edat.
+        POST /usuaris - Afegeix un nou usuari amb nom i alçada.
 
         Exemple JSON:
         {
           "nom": "Ramon",
-          "edat": 50
+          "alcada": 180
         }
       requestBody:
         required: true
@@ -115,11 +115,11 @@ paths:
     put:
       summary: Actualitza un usuari per ID
       description: |
-        PUT /usuaris/:id - Actualitza el nom i l'edat de l'usuari amb l'ID especificat.
+        PUT /usuaris/:id - Actualitza el nom i l'alçada de l'usuari amb l'ID especificat.
 
         Exemple JSON:
         {
-          "edat": 100
+          "alcada": 185
         }
       parameters:
         - in: path
@@ -175,18 +175,18 @@ components:
         nom:
           type: string
           example: "Maria"
-        edat:
+        alcada:
           type: integer
-          example: 25
+          example: 160
     UsuariInput:
       type: object
       required:
         - nom
-        - edat
+        - alcada
       properties:
         nom:
           type: string
           example: "Ramon"
-        edat:
+        alcada:
           type: integer
-          example: 50
+          example: 180
